@@ -1,0 +1,32 @@
+<!-- <div class="class">
+
+  <div>
+    <carousel [itemsPerSlide]="1" [singleSlideOffset]="false" [interval]="5000">
+      <slide>
+        <img src="../../../assets/imagesCarousel/Rectangle 23.svg" alt="Slide 1">
+      </slide>
+      <slide>
+        <img src="../../../assets/imagesCarousel/Rectangle 24.svg" alt="Slide 2">
+      </slide>
+      <slide>
+        <img src="../../../assets/imagesCarousel/Rectangle 6.svg" alt="Slide 3">
+      </slide>
+    </carousel>
+  </div>
+
+</div> -->
+
+<ngb-carousel
+[interval]="3000"
+[pauseOnHover]="false"
+[showNavigationArrows]="false"
+[showNavigationIndicators]="false">
+  <ng-template ngb-slide *ngFor="let image of images">
+    <div class="carousel-wrapper">
+      <img src="assets/{{image.name}}" [alt]="image.caption">
+      <div class="caption">{{ image.caption }}</div>
+    </div>
+
+  </ng-template>
+</ngb-carousel>
+
