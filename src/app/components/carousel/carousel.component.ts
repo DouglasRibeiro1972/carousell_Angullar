@@ -12,6 +12,7 @@ export class CarouselComponent {
     {name: 'Img1.svg', caption: 'img1'},
     {name: 'Img2.svg', caption: 'img2'},
     {name: 'Img3.svg', caption: 'img3'},
+    {name: 'Img3.svg', caption: 'img3'},
 
 
   ]
